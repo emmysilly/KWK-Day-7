@@ -15,6 +15,7 @@
 		1836E7802302F1D700271E3A /* ViewFinderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1836E77F2302F1D700271E3A /* ViewFinderTests.swift */; };
 		1836E78B2302F1D700271E3A /* ViewFinderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1836E78A2302F1D700271E3A /* ViewFinderUITests.swift */; };
 		1836E7992302F85A00271E3A /* AddPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1836E7982302F85A00271E3A /* AddPhotoViewController.swift */; };
+		1836E79F23032DB600271E3A /* PhotoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1836E79E23032DB600271E3A /* PhotoTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		1836E78A2302F1D700271E3A /* ViewFinderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewFinderUITests.swift; sourceTree = "<group>"; };
 		1836E78C2302F1D700271E3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1836E7982302F85A00271E3A /* AddPhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPhotoViewController.swift; sourceTree = "<group>"; };
+		1836E79E23032DB600271E3A /* PhotoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 		1836E75B2302F1D400271E3A = {
 			isa = PBXGroup;
 			children = (
+				1836E79E23032DB600271E3A /* PhotoTableViewController.swift */,
 				1836E7662302F1D400271E3A /* ViewFinder */,
 				1836E77E2302F1D700271E3A /* ViewFinderTests */,
 				1836E7892302F1D700271E3A /* ViewFinderUITests */,
@@ -261,6 +264,7 @@
 			files = (
 				1836E7702302F1D400271E3A /* ViewFinder.xcdatamodeld in Sources */,
 				1836E7992302F85A00271E3A /* AddPhotoViewController.swift in Sources */,
+				1836E79F23032DB600271E3A /* PhotoTableViewController.swift in Sources */,
 				1836E7682302F1D400271E3A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
