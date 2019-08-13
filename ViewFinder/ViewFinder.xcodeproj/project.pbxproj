@@ -81,7 +81,6 @@
 		1836E75B2302F1D400271E3A = {
 			isa = PBXGroup;
 			children = (
-				1836E79E23032DB600271E3A /* PhotoTableViewController.swift */,
 				1836E7662302F1D400271E3A /* ViewFinder */,
 				1836E77E2302F1D700271E3A /* ViewFinderTests */,
 				1836E7892302F1D700271E3A /* ViewFinderUITests */,
@@ -102,6 +101,7 @@
 		1836E7662302F1D400271E3A /* ViewFinder */ = {
 			isa = PBXGroup;
 			children = (
+				1836E79E23032DB600271E3A /* PhotoTableViewController.swift */,
 				1836E7672302F1D400271E3A /* AppDelegate.swift */,
 				1836E76B2302F1D400271E3A /* Main.storyboard */,
 				1836E7982302F85A00271E3A /* AddPhotoViewController.swift */,

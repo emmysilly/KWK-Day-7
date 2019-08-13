@@ -58,6 +58,9 @@
                                 <rect key="frame" x="169" y="454" width="78" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Save Photo"/>
+                                <connections>
+                                    <action selector="savePhotoTapped:" destination="2Ez-6Y-eok" eventType="touchUpInside" id="FxL-a6-tCD"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xMy-5x-myp">
                                 <rect key="frame" x="74" y="564" width="54" height="30"/>
@@ -85,6 +88,9 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="captionText:" destination="2Ez-6Y-eok" eventType="editingDidEnd" id="lGp-uA-zhx"/>
+                                </connections>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -102,7 +108,6 @@
         <!--hhhh-->
         <scene sceneID="3sV-iA-G0y">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="1h3-X4-mQa" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController title="hhhh" automaticallyAdjustsScrollViewInsets="NO" id="1TW-fs-Bst" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="G3e-KN-g7h">
@@ -114,6 +119,7 @@
                         <segue destination="lzI-lW-Pad" kind="relationship" relationship="rootViewController" id="RH2-ee-0NI"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1h3-X4-mQa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="76.811594202898561" y="116.51785714285714"/>
         </scene>
