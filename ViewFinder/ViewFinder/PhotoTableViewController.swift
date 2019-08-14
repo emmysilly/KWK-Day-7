@@ -8,31 +8,45 @@
 
 import UIKit
 
+var photos : [Photos] = []
+
 class PhotoTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
 
-    // MARK: - Table view data source
-
-   
-
+    func getPhotos(){
+        if let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext{
+            
+            if let coreDataPhotos = try? context.fetch(Photos.fetchRequest())as?[Photos] {
+                
+                if let unwrappedPhotos = coreDataPhotos {
+                    Photos = unwrappedPhotos
+                    tableView.reloadData()
+                }
+            }
+        }
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        getPhotos()
+    }
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return photos.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell()
+        let cellPhoto = photos[indexPath.row]
         
-        cell.textLabel?.text = "placeholder text"
-        cell.imageView?.image = UIImage(named: "camera-icon")
+        cell.textLabel?.text = cellPhoto.caption
+        if let cellPhotoImageData = cellPhoto.imageData {
+            if let cellPhotoImage = UIImage(data: cellPhotoImageData) {
+                cell.imageView?.image = cellPhotoImage
+            }
+        }
         return cell
     }
  
